@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+header{
+    width: 100%;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav{
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-block: 2rem;
+}
+.nav a {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #141204;
+}
+.cc{
+    gap: 1rem;
+}
+#cart{
+    width: 60px;
+    height: 60px;
+    font-size: 1.3rem;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    color: #141204;
+    background-color: #fff;
+    transition: background-color 0.2s linear;
+}
+#cart:hover{
+    background-color: #B1B1BE;
+}
+.cc p {
+    font-size: 1.5rem;
+    color: #141204;
+}
+section{
+    width: 100%;
+    text-align: center;
+}
+h1{
+    font-size: 4rem;
+    padding-block: 2rem;
+    background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+main{
+    width: 100%;
+    padding: 4rem;
+}
+.items-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+}
+.item{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.imgBox{
+    background-color: #f5f5f5;
+}
+.imgBox img{
+    width: 540px;
+}
+.item-c{
+    padding: 2rem;
+    align-items: flex-start;
+}
+.content p {
+    font-size: 1.5rem;
+}
+.ltxt{
+    color: #B1B1BE;
+}
+#addToCart{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    transition: background-color 0.2s linear;
+}
+#addToCart:hover{
+    background-color: #B1B1BE;
+}
+.cart{
+    height: 100vh;
+    width: 40%;
+    position: fixed;
+    top: 0;
+    right: -40%;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: right 1s ease;
+}
+.active{
+    right: 0;
+}
+.cart-c{
+    position: relative;
+    width:100%;
+    height: 100%;
+    padding: 3rem;
+}
+#cancel{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 60px;
+    height: 60px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 100%;
+    background-color: #fff;
+    transition: background-color 0.2s linear;
+    cursor: pointer;
+    color: #141204;
+}
+#cancel:hover{
+    background-color: #B1B1BE;
+}
+h2{
+    font-size: 2rem;
+    color: #141204;
+}
+.buttons{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.total{
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #4A306D;
+}
+.btn button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #0E273C;
+    transition: background-color 0.2s linear;
+}
+.btn button:hover{
+    background-color: #081621;
+}
+.cart-items{
+    margin-top: 2rem;
+    height: 85%;
+    overflow-y: scroll;
+}
+.cart-item{
+    padding: 1.5rem;
+    border-bottom: 2px solid #B1B1BE;
+    align-items: flex-start;
+}
+.cImg{
+    width: 200px;
+}
+.c-details{
+    flex-grow: 1;
+    margin-left: 1.6rem;
+}
+.c-details p {
+    font-size: 1.25rem;
+}
+#delete{
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 100%;
+    font-size: 1.3rem;
+    color: #141204;
+    background-color: #fff;
+    cursor: pointer;
+    transition: color 0.2s linear,background-color 0.2s linear;
+}
+#delete:hover{
+    color: #fff;
+    background-color: #960200;
+}
+#qty{
+    border: none;
+    font-size: 1.1rem;
+    padding: 1rem;
+    color: #141204;
+    background-color: #f5f5f5;
+}
+.c-btns{
+    gap: 1rem;
+}

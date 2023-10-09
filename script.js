@@ -128,12 +128,6 @@ function renderCart(){
                 <p>MRP : ₹ ${item.price}</p>
             </div>
             <div class="c-btns flex">
-                <select name="qty" id="qty" onChange = "changeQty(${item.id})">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select>
                 <button id="delete"><i class="fa-solid fa-trash" onclick = "remove(${item.id})"></i></button>
             </div>
         </div>
